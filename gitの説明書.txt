@@ -1,0 +1,8 @@
+クローンしてきたフォルダまで移動する
+git branch 作りたい名前 // branchを切る
+git checkout　作った名前 //branchを移る
+git add . //saveするファイルを決める
+git commit -m "コメント"//コメントをつけてセーブする
+git pull origin master//引っ張ってくる
+git push origin 作った名前 //プッシュする
+githubでプルリクエストを送る
