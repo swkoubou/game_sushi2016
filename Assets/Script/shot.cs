@@ -22,7 +22,7 @@ public class shot : MonoBehaviour {
         if (countRockBuster < 3 && Input.GetKeyDown(KeyCode.Z))
         {
             //いい感じに生み出す？　何を生む？どこに産む？角度？
-            Instantiate(buster, new Vector2(transform.position.x + 5f, transform.position.y + 5f)
+            Instantiate(buster, new Vector2(transform.position.x +2f, transform.position.y+2f)
                 , Quaternion.identity);
             countRockBuster += 1;
         }
