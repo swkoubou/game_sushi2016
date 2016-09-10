@@ -7,9 +7,13 @@ public class Player : MonoBehaviour
     public float jumppower = 5f;
     public SpriteRenderer render;
     public Sprite jumpImage, walkImage;
+    public bool Rmuki = true;
+    static public int countRockBuster = 0;
 
     private bool isGround;
     private Animator anime;
+    public GameObject buster;
+    public GameObject buster2;
     void Start()
     {
         //あらかじめSpriteRenderを取得する
@@ -18,6 +22,7 @@ public class Player : MonoBehaviour
         anime = GetComponent<Animator>();
         anime.enabled = true;
         isGround = false;
+        countRockBuster = 0;
     }
 
 
@@ -25,16 +30,22 @@ public class Player : MonoBehaviour
     {
         //→が押されたらYES　それ以外はNO.
         //animator.SetBool("tap", false);
+        if (Input.GetKey(KeyCode.R))
+        {
+            restart();
+        }
         if (isGround == true)
         {
             anime.enabled = true;
         }
+        
         if (Input.GetKey(KeyCode.RightArrow))
         {
             //                   new Vector2(       x,                   y).
             transform.Translate(new Vector2(moveValue * Time.deltaTime, 0f));
             anime.SetBool("tap", true);
             anime.SetBool("right", true);
+            Rmuki = true;
             if (isGround == true)
             {
                 //anime.enabled = true;
@@ -46,6 +57,7 @@ public class Player : MonoBehaviour
             transform.Translate(new Vector2(-moveValue * Time.deltaTime, 0f));
             anime.SetBool("tap", true);
             anime.SetBool("right", false);
+            Rmuki = false;
         }
         //着地しているかつジャンプやりたい
         if (isGround && Input.GetKey(KeyCode.Space))
@@ -62,6 +74,23 @@ public class Player : MonoBehaviour
                 //render.sprite = walkImage;
             }
             render.sprite = jumpImage;
+        }
+        if (Input.GetKeyDown(KeyCode.Z))
+        {
+
+            if (Rmuki == true)
+            {
+                Instantiate(buster, new Vector2(transform.position.x + 2f, transform.position.y + 3f)
+                , Quaternion.identity);
+            }
+            else
+            {
+                Instantiate(buster2, new Vector2(transform.position.x - 2f, transform.position.y + 3f)
+                , Quaternion.identity);
+            }
+            //いい感じに生み出す？　何を生む？どこに産む？角度？
+
+            //countRockBuster += 1;
         }
     }
     //こいつに触れた情報がcolになる
