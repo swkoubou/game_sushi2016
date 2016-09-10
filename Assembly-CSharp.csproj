@@ -49,6 +49,8 @@
      <Compile Include="Assets\Script\Enemy.cs" />
      <Compile Include="Assets\Script\Player.cs" />
      <Compile Include="Assets\Script\RockBuster.cs" />
+     <Compile Include="Assets\Script\readButton.cs" />
+     <Compile Include="Assets\Script\readme.cs" />
      <Compile Include="Assets\Script\shot.cs" />
      <Compile Include="Assets\Script\startgame.cs" />
  <Reference Include="UnityEngine.UI">

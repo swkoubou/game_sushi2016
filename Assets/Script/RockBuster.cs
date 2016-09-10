@@ -4,10 +4,10 @@ using System.Collections;
 //敵に触れたらアクションを起こす
 public class RockBuster : MonoBehaviour {
     public float MassX, MassY;
+    private Animator anime;
 
     // Use this for initialization
     void Start () {
-    
         //平面の物理演算系
         GetComponent<Rigidbody2D>().velocity = new Vector2(MassX, MassY);
         //オブジェクトを破壊する(自分)
