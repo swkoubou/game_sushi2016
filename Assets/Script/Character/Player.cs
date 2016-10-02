@@ -8,7 +8,8 @@ public class Player : MonoBehaviour
     public SpriteRenderer render;
     public Sprite jumpImage, walkImage;
     public bool Rmuki = true;
-    static public int countRockBuster = 0;
+    public bool JumpSet = true;
+    public static int Score = 0;
 
     private bool isGround;
     private Animator anime;
@@ -22,14 +23,12 @@ public class Player : MonoBehaviour
         anime = GetComponent<Animator>();
         anime.enabled = true;
         isGround = false;
-        countRockBuster = 0;
     }
 
 
     void Update()
     {
         //→が押されたらYES　それ以外はNO.
-        //animator.SetBool("tap", false);
         if (Input.GetKey(KeyCode.R))
         {
             restart();
@@ -46,10 +45,6 @@ public class Player : MonoBehaviour
             anime.SetBool("tap", true);
             anime.SetBool("right", true);
             Rmuki = true;
-            if (isGround == true)
-            {
-                //anime.enabled = true;
-            }
         }
         else if (Input.GetKey(KeyCode.LeftArrow))
         {
@@ -69,15 +64,10 @@ public class Player : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.RightArrow) || Input.GetKeyUp(KeyCode.LeftArrow))
         {
             anime.SetBool("tap", false);
-            if (isGround)
-            {
-                //render.sprite = walkImage;
-            }
-            render.sprite = jumpImage;
         }
         if (Input.GetKeyDown(KeyCode.Z))
         {
-
+            //いい感じに生み出す？　何を生む？どこに産む？角度？
             if (Rmuki == true)
             {
                 Instantiate(buster, new Vector2(transform.position.x + 2f, transform.position.y + 3f)
@@ -88,25 +78,18 @@ public class Player : MonoBehaviour
                 Instantiate(buster2, new Vector2(transform.position.x - 2f, transform.position.y + 3f)
                 , Quaternion.identity);
             }
-            //いい感じに生み出す？　何を生む？どこに産む？角度？
-
-            //countRockBuster += 1;
         }
     }
     //こいつに触れた情報がcolになる
     void OnTriggerStay2D(Collider2D col)
     {
-        if (col.tag == "Ground" || col.tag == "Object")
+        if (col.tag == "Ground" || ((col.tag == "Object") && (JumpSet == true)))
         {
             isGround = true;
-            //render.sprite = walkImage;
-        }
-        {
-            isGround = true;
-            //render.sprite = walkImage;
         }
         if (col.tag == "death" || col.tag == "enemy")
         {
+            Score /= 2;
             restart();
         }
         /*if (col.tag == "goal")
