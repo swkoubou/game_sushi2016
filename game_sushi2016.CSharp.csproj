@@ -76,9 +76,7 @@
     <Compile Include="Assets\Script\UI\Game\readButton.cs" />
     <Compile Include="Assets\Script\UI\Game\readme.cs" />
     <Compile Include="Assets\Script\UI\Game\startgame.cs" />
-    <Compile Include="Assets\Script\UI\Top\Top_readButton.cs" />
-    <Compile Include="Assets\Script\UI\Top\Top_readText.cs" />
-    <Compile Include="Assets\Script\UI\Top\Top_startButton.cs" />
+    <Compile Include="Assets\Script\UI\Top\Top_Buttons.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>

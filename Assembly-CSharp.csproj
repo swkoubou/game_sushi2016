@@ -45,14 +45,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Script\CameraTrace.cs" />
-     <Compile Include="Assets\Script\Enemy.cs" />
-     <Compile Include="Assets\Script\Player.cs" />
-     <Compile Include="Assets\Script\RockBuster.cs" />
-     <Compile Include="Assets\Script\readButton.cs" />
-     <Compile Include="Assets\Script\readme.cs" />
-     <Compile Include="Assets\Script\shot.cs" />
-     <Compile Include="Assets\Script\startgame.cs" />
+     <Compile Include="Assets\Script\Character\Enemy_1.cs" />
+     <Compile Include="Assets\Script\Character\Player.cs" />
+     <Compile Include="Assets\Script\Object\CameraTrace.cs" />
+     <Compile Include="Assets\Script\Object\Goal_Script.cs" />
+     <Compile Include="Assets\Script\Object\RockBuster.cs" />
+     <Compile Include="Assets\Script\Object\shot.cs" />
+     <Compile Include="Assets\Script\UI\Game\Menu_Buttons.cs" />
+     <Compile Include="Assets\Script\UI\Game\ScorePrinter.cs" />
+     <Compile Include="Assets\Script\UI\Top\Top_Buttons.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

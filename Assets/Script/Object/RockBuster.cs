@@ -4,7 +4,6 @@ using System.Collections;
 //敵に触れたらアクションを起こす
 public class RockBuster : MonoBehaviour {
     public float MassX, MassY;
-    public static int enScore;
     private Animator anime;
 
     // Use this for initialization
@@ -21,7 +20,7 @@ public class RockBuster : MonoBehaviour {
         if(col.gameObject.tag == "enemy")
         {
             Destroy(col.gameObject);
-            enScore += 100;
+            Player.Score += 100;
             //Destroy(this.gameObject);
         }
         //フィールドオブジェクトに当たったら弾を消す

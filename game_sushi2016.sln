@@ -1,7 +1,7 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2015
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "game_sushi2016.CSharp", "game_sushi2016.CSharp.csproj", "{B3B97BAF-0A9A-982D-0E91-93E874210293}"
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{C8508552-3D57-FEA0-001F-041B278DA5DC}") = "game_sushi2016", "Assembly-CSharp.csproj", "{CDE08A47-DAE8-C462-49DB-C7C0D03E8648}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,12 +9,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B3B97BAF-0A9A-982D-0E91-93E874210293}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B3B97BAF-0A9A-982D-0E91-93E874210293}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B3B97BAF-0A9A-982D-0E91-93E874210293}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B3B97BAF-0A9A-982D-0E91-93E874210293}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDE08A47-DAE8-C462-49DB-C7C0D03E8648}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDE08A47-DAE8-C462-49DB-C7C0D03E8648}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDE08A47-DAE8-C462-49DB-C7C0D03E8648}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDE08A47-DAE8-C462-49DB-C7C0D03E8648}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
 	EndGlobalSection
 EndGlobal
