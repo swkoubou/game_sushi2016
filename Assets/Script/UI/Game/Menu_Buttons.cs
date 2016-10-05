@@ -14,12 +14,17 @@ public class Menu_Buttons : MonoBehaviour
         GameObject.Find("Player").GetComponent<Player>().enabled = false;
         GameObject.Find("playButton").GetComponent<Canvas>().enabled = false;
         GameObject.Find("playMenu").GetComponent<Canvas>().enabled = false;
+        GameObject.Find("Reset_Conf").GetComponent<Canvas>().enabled = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        GameObject.Find("playButton/ScoreView").GetComponent<Text>().text = "Score:" + Player.Score.ToString();
+        if (Player.Lives < 0)
+        {
+            Time.timeScale = 0;
+            Reset_Conf();
+        }
     }
 
     public void Start_Button()
@@ -38,15 +43,35 @@ public class Menu_Buttons : MonoBehaviour
         stop = true;
     }
 
-    public void Move_Top()
+    public void Reset_Conf()
     {
-        SceneManager.LoadScene("Top");
+        GameObject.Find("Reset_Conf").GetComponent<Canvas>().enabled = true;
     }
 
     public void Continue_Button()
     {
         Time.timeScale = 1;
         GameObject.Find("playMenu").GetComponent<Canvas>().enabled = false;
+        GameObject.Find("Reset_Conf").GetComponent<Canvas>().enabled = false;
         GameObject.Find("playButton").GetComponent<Canvas>().enabled = true;
+    }
+
+    public void Reset_OK()
+    {
+        SceneManager.LoadScene("Top");
+    }
+
+    public void Reset_NG()
+    {
+        if (Player.Lives < 0)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            Player.Score = 0;
+            Player.Lives = 5;
+        }
+        else {
+            Continue_Button();
+        }
+        GameObject.Find("Reset_Conf").GetComponent<Canvas>().enabled = false;
     }
 }
