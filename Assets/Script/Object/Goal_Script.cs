@@ -7,8 +7,7 @@ public class Goal_Script : MonoBehaviour
 
     public AudioClip audioClip;
     AudioSource audioSource;
-    bool click = false;
-    public int Stage;
+    public bool last = false;
 
     // Use this for initialization
     void Start()
@@ -26,13 +25,20 @@ public class Goal_Script : MonoBehaviour
 
     IEnumerator OnTriggerStay2D(Collider2D col)
     {
-        if (col.tag == "Player" && click == false)
+        if (col.tag == "Player")
         {
             audioSource.PlayOneShot(audioClip);
-            click = true;
             yield return new WaitForSeconds(1);
-            restart();
-            //SceneManager.LoadScene("Scene"+Stage);
+            if (last == true)
+            {
+                SceneManager.LoadScene("End");
+            }
+            else
+            {
+                Player.Stage++;
+                SceneManager.LoadScene("Stage_" + Player.Stage.ToString());
+
+            }
         }
     }
 

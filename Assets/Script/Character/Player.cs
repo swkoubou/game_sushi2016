@@ -5,12 +5,11 @@ public class Player : MonoBehaviour
 {
     public float moveValue = 15f;//移動量.
     public float jumppower = 5f;
-    public SpriteRenderer render;
-    public Sprite jumpImage, walkImage;
     public bool Rmuki = true;
     public bool JumpSet = true;
     public static int Score = 0;
-
+    public static int Lives = 5;
+    public static int Stage = 1;
     private bool isGround;
     private Animator anime;
     public GameObject buster;
@@ -18,11 +17,11 @@ public class Player : MonoBehaviour
     void Start()
     {
         //あらかじめSpriteRenderを取得する
-        render = GetComponent<SpriteRenderer>();
         isGround = false;
         anime = GetComponent<Animator>();
         anime.enabled = true;
         isGround = false;
+        if (Lives == 0) Game_Over();
     }
 
 
@@ -90,6 +89,7 @@ public class Player : MonoBehaviour
         if (col.tag == "death" || col.tag == "enemy")
         {
             Score /= 2;
+            Lives--;
             restart();
         }
         /*if (col.tag == "goal")
@@ -103,5 +103,10 @@ public class Player : MonoBehaviour
     void restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    void Game_Over()
+    {
+
     }
 }
