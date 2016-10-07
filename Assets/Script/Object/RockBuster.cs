@@ -19,21 +19,19 @@ public class RockBuster : MonoBehaviour {
         //タグがenemyだったら弾と敵を削除する
         if(col.gameObject.tag == "enemy")
         {
-            Destroy(col.gameObject);
-            Player.Score += 100;
-            //Destroy(this.gameObject);
+            Destroy(this.gameObject);
         }
         //フィールドオブジェクトに当たったら弾を消す
-        else if(col.gameObject.tag == "Ground")
+        else if(col.gameObject.tag == "Ground"||col.gameObject.tag=="Object")
         {
-            //Destroy(this.gameObject);
+            Destroy(this.gameObject);
         }
-        Destroy(this.gameObject);
+        //Destroy(this.gameObject);
     }
     //自分が破壊された時
-    void OnDestroy()
+    /*void OnDestroy()
     {
         //制限緩和
         shot.countRockBuster -= 1;
-    }
+    }*/
 }

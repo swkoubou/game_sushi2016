@@ -10,6 +10,7 @@ public class Player : MonoBehaviour
     public static int Score = 0;
     public static int Lives = 5;
     public static int Stage = 1;
+    public static float Lastpos = 0;
     private bool isGround;
     private Animator anime;
     public GameObject buster;
@@ -22,6 +23,7 @@ public class Player : MonoBehaviour
         anime.enabled = true;
         isGround = false;
         if (Lives == 0) Game_Over();
+        transform.Translate(new Vector2(Lastpos, 2f));
     }
 
 

@@ -46,6 +46,7 @@ public class Menu_Buttons : MonoBehaviour
     public void Reset_Conf()
     {
         GameObject.Find("Reset_Conf").GetComponent<Canvas>().enabled = true;
+        GameObject.Find("playMenu").GetComponent<Canvas>().enabled = false;
     }
 
     public void Continue_Button()

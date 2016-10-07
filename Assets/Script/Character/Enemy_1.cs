@@ -34,4 +34,12 @@ public class Enemy_1 : MonoBehaviour {
             transform.position=new Vector2(startPos.x,startPos.y+pingpong);
         }
 	}
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.gameObject.tag == "Attack")
+        {
+            Player.Score += 100;
+            Destroy(this.gameObject);
+        }
+    }
 }

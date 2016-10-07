@@ -14,6 +14,6 @@ public class LivesPrinter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        this.GetComponent<Text>().text = "Liv X" + Player.Lives.ToString();
+        this.GetComponent<Text>().text = "x" + Player.Lives.ToString();
     }
 }
