@@ -14,7 +14,6 @@ public class Goal_Script : MonoBehaviour
     {
         audioSource = gameObject.GetComponent<AudioSource>();
         audioSource.clip = audioClip;
-
     }
 
     // Update is called once per frame
@@ -29,21 +28,17 @@ public class Goal_Script : MonoBehaviour
         {
             audioSource.PlayOneShot(audioClip);
             yield return new WaitForSeconds(1);
+            Player.Lastpos = 0;
             if (last == true)
             {
                 SceneManager.LoadScene("End");
             }
             else
             {
-                Player.Stage++;
-                SceneManager.LoadScene("Stage_" + Player.Stage.ToString());
+                Number_Manager.Stage++;
+                SceneManager.LoadScene("Stage_" + Number_Manager.Stage.ToString());
 
             }
         }
-    }
-
-    void restart()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

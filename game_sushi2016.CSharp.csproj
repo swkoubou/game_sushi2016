@@ -61,8 +61,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Script\Character\Boss_Script.cs" />
-    <Compile Include="Assets\Script\Character\Enemy_1.cs" />
+    <Compile Include="Assets\Script\Character\Enemy\Boss_Script.cs" />
+    <Compile Include="Assets\Script\Character\Enemy\Enemy_1.cs" />
     <Compile Include="Assets\Script\Character\Player.cs" />
     <Compile Include="Assets\Script\Object\CameraTrace.cs" />
     <Compile Include="Assets\Script\Object\Checkpoint_Script.cs" />
@@ -72,6 +72,7 @@
     <Compile Include="Assets\Script\UI\End\TestEnd.cs" />
     <Compile Include="Assets\Script\UI\Game\LivesPrinter.cs" />
     <Compile Include="Assets\Script\UI\Game\Menu_Buttons.cs" />
+    <Compile Include="Assets\Script\UI\Game\Number_Manager.cs" />
     <Compile Include="Assets\Script\UI\Game\ScorePrinter.cs" />
     <Compile Include="Assets\Script\UI\Top\Top_Buttons.cs" />
   </ItemGroup>

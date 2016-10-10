@@ -20,7 +20,7 @@ public class Menu_Buttons : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Player.Lives < 0)
+        if (Number_Manager.Lives < 0)
         {
             Time.timeScale = 0;
             Reset_Conf();
@@ -64,11 +64,11 @@ public class Menu_Buttons : MonoBehaviour
 
     public void Reset_NG()
     {
-        if (Player.Lives < 0)
+        if (Number_Manager.Lives < 0)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-            Player.Score = 0;
-            Player.Lives = 5;
+            Number_Manager.Score = 0;
+            Number_Manager.Lives = 5;
         }
         else {
             Continue_Button();

@@ -11,6 +11,6 @@ public class ScorePrinter : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        this.GetComponent<Text>().text = "スコア:" + Player.Score.ToString();
+        this.GetComponent<Text>().text = "スコア:" + Number_Manager.Score.ToString();
     }
 }
