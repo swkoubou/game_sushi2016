@@ -1,11 +1,11 @@
 fileFormatVersion: 2
 guid: 174359d9b3b6cff449c7f7640a27f05a
-timeCreated: 1476079580
+timeCreated: 1476244708
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: torpedofish_0
-    21300002: torpedofish_1
+    21300000: Enemy_5L_0
+    21300002: Enemy_5L_1
     21300004: torpedofish_2
   serializedVersion: 2
   mipmaps:
@@ -53,7 +53,7 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: torpedofish_0
+    - name: Enemy_5L_0
       rect:
         serializedVersion: 2
         x: 0
@@ -61,7 +61,7 @@ TextureImporter:
         width: 128
         height: 55
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: 64, y: 27.5}
@@ -75,36 +75,23 @@ TextureImporter:
         - {x: 32, y: -21.5}
         - {x: 59, y: -26.5}
         - {x: 64, y: -19.5}
-    - name: torpedofish_1
+    - name: Enemy_5L_1
       rect:
         serializedVersion: 2
         x: 129
-        y: 6
+        y: 3
         width: 128
-        height: 52
+        height: 55
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 2, y: 26}
-        - {x: -43, y: 15}
-        - {x: -64, y: 1}
-        - {x: -64, y: -22}
-        - {x: -59, y: -26}
-        - {x: 64, y: -26}
-        - {x: 64, y: 19}
-        - {x: 51, y: 26}
-    - name: torpedofish_2
-      rect:
-        serializedVersion: 2
-        x: 149
-        y: 4
-        width: 10
-        height: 5
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      - - {x: -17, y: 27.5}
+        - {x: -64, y: 11.5}
+        - {x: -64, y: -27.5}
+        - {x: 64, y: -27.5}
+        - {x: 64, y: 20.5}
+        - {x: 57, y: 27.5}
     outline: []
   spritePackingTag: 
   userData: 

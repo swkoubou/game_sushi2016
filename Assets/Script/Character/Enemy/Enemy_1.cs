@@ -3,7 +3,8 @@ using System.Collections;
 //上下or左右反復運動　選べるようにする
 //細かく設定できるように
 //移動系統のみ実装
-public class Enemy_1 : MonoBehaviour {
+public class Enemy_1 : MonoBehaviour
+{
     private Vector3 startPos;
     //移動スピード
     public float speed = 5f;
@@ -13,27 +14,39 @@ public class Enemy_1 : MonoBehaviour {
     public EnemyMove enemymode;
     public enum EnemyMove
     {
-        Kuribo, PataPata,
+        UpDown, LeftRight, Left, Up,
     }
-	void Start () {
+    void Start()
+    {
         //初めに自分の位置を取得する
         startPos = transform.position;
-	}
-	
-	void Update () {
+    }
+
+    void Update()
+    {
         //0からmoveRangeまで往復値を格納
-        var pingpong = Mathf.PingPong(Time.time * speed, moveRange);
-        //くりぼーもーどの時
-        if (enemymode == EnemyMove.Kuribo)
+        if (Time.timeScale == 1)
         {
-           transform.position=new Vector2(startPos.x-pingpong,transform.position.y);
+            var pingpong = Mathf.PingPong(Time.time * speed, moveRange);
+            if (enemymode == EnemyMove.UpDown)
+            {
+                transform.position = new Vector2(startPos.x, startPos.y + pingpong);
+            }
+            else if (enemymode == EnemyMove.LeftRight)
+            {
+                transform.position = new Vector2(startPos.x - pingpong, transform.position.y);
+            }
+            else if (enemymode == EnemyMove.Up)
+            {
+                transform.position = new Vector2(transform.position.x, transform.position.y + (speed / 32));
+            }
+            else if (enemymode == EnemyMove.Left)
+            {
+                transform.position = new Vector2(transform.position.x - (speed / 32), transform.position.y);
+            }
         }
-        //バタパタモードの時
-        else if (enemymode == EnemyMove.PataPata)
-        {
-            transform.position=new Vector2(startPos.x,startPos.y+pingpong);
-        }
-	}
+
+    }
     void OnTriggerEnter2D(Collider2D col)
     {
         if (col.gameObject.tag == "Attack")

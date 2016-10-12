@@ -19,6 +19,7 @@ public class Boss_Script : MonoBehaviour
     bool hp_anim = true;
     public int BossScore;
     public float Start_distance;
+    private Vector3 CamPos;
 
     void Start()
     {
@@ -41,7 +42,7 @@ public class Boss_Script : MonoBehaviour
             Number_Manager.Score += BossScore;
             Destroy(this.gameObject);
         }
-        if (enemyinhale < Start_distance) HPBar();
+        if (enemyinhale < Start_distance) CamIn();
         Playerinhale();
         Shot_if();
         Boss_slider.value = _hp;
@@ -71,8 +72,10 @@ public class Boss_Script : MonoBehaviour
         }
     }
 
-    void HPBar()
+    void CamIn()
     {
+        CamPos = GameObject.Find("Main Camera").transform.position;
+        GameObject.Find("Main Camera").transform.Translate(new Vector3(startPos.x+30, CamPos.y,CamPos.z));
         if (hp_anim)
         {
             Boss_slider.gameObject.SetActive(true);

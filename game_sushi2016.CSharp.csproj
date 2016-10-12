@@ -63,10 +63,14 @@
   <ItemGroup>
     <Compile Include="Assets\Script\Character\Enemy\Boss_Script.cs" />
     <Compile Include="Assets\Script\Character\Enemy\Enemy_1.cs" />
+    <Compile Include="Assets\Script\Character\Enemy\Enemy_2.cs" />
     <Compile Include="Assets\Script\Character\Player.cs" />
     <Compile Include="Assets\Script\Object\CameraTrace.cs" />
     <Compile Include="Assets\Script\Object\Checkpoint_Script.cs" />
+    <Compile Include="Assets\Script\Object\Enemy_Ball.cs" />
+    <Compile Include="Assets\Script\Object\Enemy_Shot.cs" />
     <Compile Include="Assets\Script\Object\Goal_Script.cs" />
+    <Compile Include="Assets\Script\Object\Player_Shot.cs" />
     <Compile Include="Assets\Script\Object\RockBuster.cs" />
     <Compile Include="Assets\Script\Object\shot.cs" />
     <Compile Include="Assets\Script\UI\End\TestEnd.cs" />

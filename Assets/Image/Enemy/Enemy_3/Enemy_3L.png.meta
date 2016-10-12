@@ -1,9 +1,11 @@
 fileFormatVersion: 2
 guid: cf808aa1067077c45a79575335f8955a
-timeCreated: 1476081568
+timeCreated: 1476244563
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Enemy_3L_0
+    21300002: Enemy_3L_1
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,26 +32,66 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
-    wrapMode: -1
-  nPOTScale: 1
+    wrapMode: 1
+  nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
-  alphaIsTransparency: 0
-  textureType: -1
+  alphaIsTransparency: 1
+  textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: Enemy_3L_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27, y: 32}
+        - {x: -31, y: 30}
+        - {x: -31, y: -26}
+        - {x: -24, y: -32}
+        - {x: 28, y: -32}
+        - {x: 31, y: -25}
+        - {x: 31, y: 23}
+        - {x: 28, y: 32}
+    - name: Enemy_3L_1
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 0
+        width: 55
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 19.5, y: 32}
+        - {x: -18.5, y: 32}
+        - {x: -22.5, y: 30}
+        - {x: -27.5, y: 24}
+        - {x: -27.5, y: -19}
+        - {x: -23.5, y: -32}
+        - {x: 21.5, y: -32}
+        - {x: 21.5, y: -21}
+        - {x: 27.5, y: -3}
+        - {x: 27.5, y: 22}
     outline: []
   spritePackingTag: 
   userData: 
