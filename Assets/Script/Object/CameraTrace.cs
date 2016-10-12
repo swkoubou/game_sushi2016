@@ -8,9 +8,9 @@ public class CameraTrace : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         player = GameObject.Find("Player");
-
+        transform.Translate(new Vector2(Player.Lastpos,0f));
         offset = transform.position - player.transform.position;
-	}
+    }
 	
 	// Update is called once per frame
 	void Update () {

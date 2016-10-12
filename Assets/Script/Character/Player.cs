@@ -7,9 +7,7 @@ public class Player : MonoBehaviour
     public float jumppower = 5f;
     public bool Rmuki = true;
     public bool JumpSet = true;
-    public static int Score = 0;
-    public static int Lives = 5;
-    public static int Stage = 1;
+    public static float Lastpos = 0;
     private bool isGround;
     private Animator anime;
     public GameObject buster;
@@ -21,7 +19,8 @@ public class Player : MonoBehaviour
         anime = GetComponent<Animator>();
         anime.enabled = true;
         isGround = false;
-        if (Lives == 0) Game_Over();
+        if (Number_Manager.Lives == 0) Game_Over();
+        transform.Translate(new Vector2(Lastpos, 2f));
     }
 
 
@@ -88,8 +87,8 @@ public class Player : MonoBehaviour
         }
         if (col.tag == "death" || col.tag == "enemy")
         {
-            Score /= 2;
-            Lives--;
+            Number_Manager.Score /= 2;
+            Number_Manager.Lives--;
             restart();
         }
         /*if (col.tag == "goal")

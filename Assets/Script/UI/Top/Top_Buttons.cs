@@ -4,15 +4,13 @@ using UnityEngine.SceneManagement;
 
 public class Top_Buttons : MonoBehaviour
 {
-    public string Stage_Name;
+    public int StartStage = 0;
+    public int StartLives = 0;
+    public int StartScore = 0;
     // Use this for initialization
     void Start()
     {
         GameObject.Find("readText").GetComponent<Canvas>().enabled = false;
-
-        Player.Score = 0;
-        Player.Lives = 5;
-        Player.Stage = 1;
     }
 
     // Update is called once per frame
@@ -23,10 +21,12 @@ public class Top_Buttons : MonoBehaviour
 
     public void gameStart()
     {
-        Player.Score = 0;
-        SceneManager.LoadScene(Stage_Name);
+        Number_Manager.Score = StartScore;
+        Number_Manager.Lives = StartLives;
+        Number_Manager.Stage = StartStage;
+        SceneManager.LoadScene("Stage_"+StartStage);
     }
-    public void pop_read()
+    public void open_Text()
     {
         GameObject.Find("readText").GetComponent<Canvas>().enabled = true;
     }
