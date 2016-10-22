@@ -6,6 +6,7 @@ using System.Collections;
 public class Enemy_1 : MonoBehaviour
 {
     private Vector3 startPos;
+    public bool Cam_On = false;
     //移動スピード
     public float speed = 5f;
     //移動範囲
@@ -25,7 +26,7 @@ public class Enemy_1 : MonoBehaviour
     void Update()
     {
         //0からmoveRangeまで往復値を格納
-        if (Time.timeScale == 1)
+        if (Time.timeScale == 1 && Cam_On == true)
         {
             var pingpong = Mathf.PingPong(Time.time * speed, moveRange);
             if (enemymode == EnemyMove.UpDown)
@@ -53,6 +54,10 @@ public class Enemy_1 : MonoBehaviour
         {
             Number_Manager.Score += 100;
             Destroy(this.gameObject);
+        }
+        if (col.tag == "MainCamera")
+        {
+            Cam_On = true;
         }
     }
 }

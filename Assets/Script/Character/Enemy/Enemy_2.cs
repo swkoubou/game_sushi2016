@@ -9,6 +9,7 @@ public class Enemy_2 : MonoBehaviour
     public GameObject Shot;
     bool ShotFinish = false;
     public float ShotRange;
+    public bool Cam_On = false;
     // Use this for initialization
     void Start()
     {
@@ -20,12 +21,15 @@ public class Enemy_2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.x - GameObject.Find("Player").transform.position.x < ShotRange && ShotFinish == false)
+        if (Time.timeScale == 1 && Cam_On == true)
         {
-            Instantiate(Shot, new Vector2(transform.position.x - 10f, transform.position.y + 1f)
-                , Quaternion.identity);
-            SpriteR.sprite = Fire;
-            ShotFinish = true;
+            if (transform.position.x - GameObject.Find("Player").transform.position.x < ShotRange && ShotFinish == false)
+            {
+                Instantiate(Shot, new Vector2(transform.position.x - 10f, transform.position.y + 1f)
+                    , Quaternion.identity);
+                SpriteR.sprite = Fire;
+                ShotFinish = true;
+            }
         }
     }
 
@@ -35,6 +39,10 @@ public class Enemy_2 : MonoBehaviour
         {
             Number_Manager.Score += 100;
             Destroy(this.gameObject);
+        }
+        if (col.tag == "MainCamera")
+        {
+            Cam_On = true;
         }
     }
 }
