@@ -74,8 +74,6 @@ public class Boss_Script : MonoBehaviour
 
     void CamIn()
     {
-        CamPos = GameObject.Find("Main Camera").transform.position;
-        GameObject.Find("Main Camera").transform.Translate(new Vector3(startPos.x+30, CamPos.y,CamPos.z));
         if (hp_anim)
         {
             Boss_slider.gameObject.SetActive(true);

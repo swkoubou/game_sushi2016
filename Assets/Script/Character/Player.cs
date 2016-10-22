@@ -27,10 +27,6 @@ public class Player : MonoBehaviour
     void Update()
     {
         //→が押されたらYES　それ以外はNO.
-        if (Input.GetKey(KeyCode.R))
-        {
-            restart();
-        }
         if (isGround == true)
         {
             anime.enabled = true;
@@ -68,12 +64,12 @@ public class Player : MonoBehaviour
             //いい感じに生み出す？　何を生む？どこに産む？角度？
             if (Rmuki == true)
             {
-                Instantiate(buster, new Vector2(transform.position.x + 2f, transform.position.y + 3f)
+                Instantiate(buster, new Vector2(transform.position.x + 5f, transform.position.y + 3f)
                 , Quaternion.identity);
             }
             else
             {
-                Instantiate(buster2, new Vector2(transform.position.x - 2f, transform.position.y + 3f)
+                Instantiate(buster2, new Vector2(transform.position.x - 5f, transform.position.y + 3f)
                 , Quaternion.identity);
             }
         }

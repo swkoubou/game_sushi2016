@@ -61,9 +61,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\MasterCube\Script\MasterCube.cs" />
     <Compile Include="Assets\Script\Character\Enemy\Boss_Script.cs" />
     <Compile Include="Assets\Script\Character\Enemy\Enemy_1.cs" />
     <Compile Include="Assets\Script\Character\Enemy\Enemy_2.cs" />
+    <Compile Include="Assets\Script\Character\Enemy\Enemy_3.cs" />
     <Compile Include="Assets\Script\Character\Player.cs" />
     <Compile Include="Assets\Script\Object\CameraTrace.cs" />
     <Compile Include="Assets\Script\Object\Checkpoint_Script.cs" />
@@ -81,6 +83,8 @@
     <Compile Include="Assets\Script\UI\Top\Top_Buttons.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\MasterCube\README.txt" />
+    <None Include="Assets\MasterCube\license.txt" />
     <None Include="Assets\Memo\Credits.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
