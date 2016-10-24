@@ -47,6 +47,7 @@ public class Menu_Buttons : MonoBehaviour
     {
         GameObject.Find("Reset_Conf").GetComponent<Canvas>().enabled = true;
         GameObject.Find("playMenu").GetComponent<Canvas>().enabled = false;
+        GameObject.Find("Start_Image").GetComponent<Canvas>().enabled = false;
     }
 
     public void Continue_Button()
