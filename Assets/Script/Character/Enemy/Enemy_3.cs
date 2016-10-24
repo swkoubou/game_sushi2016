@@ -24,7 +24,7 @@ public class Enemy_3 : MonoBehaviour
         findPlayer = transform.position.x - GameObject.Find("Player").transform.position.x;
         if (Time.timeScale == 1 && Cam_On == true)
         {
-            if (findPlayer <= Range)
+            if (findPlayer < Range)
             {
                 if (enemymode == Enemy_Mode.Str)
                 {

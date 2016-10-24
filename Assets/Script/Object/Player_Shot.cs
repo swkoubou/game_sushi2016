@@ -13,7 +13,7 @@ public class Player_Shot : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.tag!="No_hit")
+        if (col.tag!="No_hit"&&col.tag!="MainCamera")
         {
             Destroy(this.gameObject);
         }
