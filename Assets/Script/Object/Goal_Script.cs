@@ -7,10 +7,10 @@ public class Goal_Script : MonoBehaviour
 
     public AudioClip audioClip;
     AudioSource audioSource;
-    public bool last = false;
     SpriteRenderer Goal_G;
     public Sprite OFF;
     public Sprite ON;
+    public bool last;
 
     // Use this for initialization
     void Start()
@@ -27,7 +27,7 @@ public class Goal_Script : MonoBehaviour
 
     }
 
-    IEnumerator OnTriggerStay2D(Collider2D col)
+    IEnumerator OnTriggerEnter2D(Collider2D col)
     {
         if (col.tag == "Player")
         {
