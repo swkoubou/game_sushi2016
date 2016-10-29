@@ -1,0 +1,322 @@
+fileFormatVersion: 2
+guid: 5ba076b0999cc174188bbb1b66cc1725
+timeCreated: 1477720731
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Enemy_Boss1_0
+    21300002: Enemy_Boss1_1
+    21300004: Enemy_Boss1_3
+    21300006: Enemy_Boss1_4
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Enemy_Boss1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 128
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8, y: 40}
+        - {x: 3, y: 35}
+        - {x: -10, y: 16}
+        - {x: -10, y: 14}
+        - {x: -7, y: 13}
+        - {x: -10, y: 11}
+        - {x: -10, y: 17}
+        - {x: -14, y: 23}
+        - {x: -23, y: 23}
+        - {x: -22, y: 38}
+        - {x: -22, y: 40}
+        - {x: -59, y: 40}
+        - {x: -64, y: 29}
+        - {x: -64, y: -40}
+        - {x: 64, y: -40}
+        - {x: 64, y: 6}
+        - {x: 38, y: 40}
+      - - {x: -48, y: -19}
+        - {x: -50, y: -20}
+        - {x: -52, y: -34}
+        - {x: -52, y: -40}
+        - {x: -39, y: -40}
+        - {x: -34, y: -30}
+        - {x: -34, y: -19}
+      - - {x: -21, y: -10}
+        - {x: -24, y: -11}
+        - {x: -31, y: -31}
+        - {x: -31, y: -35}
+        - {x: -30, y: -37}
+        - {x: -26, y: -37}
+        - {x: -20, y: -27}
+        - {x: -19, y: -20}
+        - {x: -19, y: -12}
+      - - {x: -16, y: -31}
+        - {x: -13, y: -32}
+        - {x: -10, y: -31}
+        - {x: -10, y: -22}
+        - {x: -13, y: -17}
+        - {x: -16, y: -18}
+      - - {x: -58, y: -10}
+        - {x: -61, y: -11}
+        - {x: -64, y: -16}
+        - {x: -64, y: -20}
+        - {x: -63, y: -22}
+        - {x: -61, y: -22}
+        - {x: -57, y: -19}
+        - {x: -56, y: -16}
+        - {x: -56, y: -12}
+      - - {x: -12, y: 33}
+        - {x: -20, y: 29}
+        - {x: -20, y: 26}
+        - {x: -19, y: 25}
+        - {x: -14, y: 25}
+        - {x: -1, y: 27}
+        - {x: 0, y: 30}
+        - {x: -1, y: 33}
+      - - {x: -27, y: 32}
+        - {x: -28, y: 28}
+        - {x: -26, y: 26}
+        - {x: -24, y: 26}
+        - {x: -12, y: 38}
+        - {x: -12, y: 40}
+        - {x: -21, y: 40}
+        - {x: -23, y: 39}
+      - - {x: -61, y: 32}
+        - {x: -59, y: 30}
+        - {x: -56, y: 31}
+        - {x: -54, y: 40}
+        - {x: -59, y: 40}
+        - {x: -61, y: 38}
+    - name: Enemy_Boss1_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 128
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5, y: 40}
+        - {x: 0, y: 31}
+        - {x: -10, y: -20}
+        - {x: -10, y: -37}
+        - {x: -8, y: -40}
+        - {x: 64, y: -40}
+        - {x: 64, y: 33}
+        - {x: 40, y: 40}
+      - - {x: -20, y: 4}
+        - {x: -30, y: 4}
+        - {x: -43, y: 1}
+        - {x: -52, y: -6}
+        - {x: -50, y: -9}
+        - {x: -47, y: -9}
+        - {x: -38, y: -4}
+        - {x: -31, y: -3}
+        - {x: -33, y: -3}
+        - {x: -42, y: -9}
+        - {x: -53, y: -25}
+        - {x: -53, y: -33}
+        - {x: -47, y: -33}
+        - {x: -9, y: -2}
+        - {x: -7, y: 0}
+        - {x: -8, y: 3}
+        - {x: -16, y: 3}
+      - - {x: -32, y: -11}
+        - {x: -36, y: -16}
+        - {x: -36, y: -20}
+        - {x: -34, y: -24}
+        - {x: -32, y: -24}
+        - {x: -22, y: -15}
+        - {x: -23, y: -12}
+        - {x: -29, y: -11}
+      - - {x: -23, y: -7}
+        - {x: -21, y: -10}
+        - {x: -10, y: -9}
+        - {x: -6, y: -6}
+        - {x: -6, y: -3}
+        - {x: -17, y: -3}
+        - {x: -22, y: -4}
+      - - {x: -18, y: 18}
+        - {x: -27, y: 16}
+        - {x: -36, y: 5}
+        - {x: -35, y: 2}
+        - {x: -31, y: 2}
+        - {x: -10, y: 6}
+        - {x: -4, y: 10}
+        - {x: -4, y: 12}
+        - {x: -6, y: 18}
+      - - {x: -59, y: 19}
+        - {x: -59, y: 14}
+        - {x: -55, y: 10}
+        - {x: -32, y: 10}
+        - {x: -32, y: 17}
+        - {x: -44, y: 19}
+      - - {x: -22, y: 25}
+        - {x: -34, y: 39}
+        - {x: -50, y: 39}
+        - {x: -50, y: 29}
+        - {x: -44, y: 21}
+        - {x: -26, y: 18}
+        - {x: -8, y: 18}
+        - {x: -6, y: 19}
+        - {x: -6, y: 22}
+        - {x: -11, y: 29}
+        - {x: -21, y: 29}
+        - {x: -23, y: 27}
+    - name: Enemy_Boss1_3
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 0
+        width: 128
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -42, y: -21}
+        - {x: -46, y: -21}
+        - {x: -55, y: -38}
+        - {x: -55, y: -40}
+        - {x: -49, y: -40}
+        - {x: -45, y: -36}
+        - {x: -40, y: -25}
+        - {x: -40, y: -22}
+      - - {x: 29, y: 40}
+        - {x: -61, y: 40}
+        - {x: -59, y: 37}
+        - {x: -54, y: 31}
+        - {x: -57, y: 34}
+        - {x: -62, y: 40}
+        - {x: -64, y: 40}
+        - {x: -64, y: -8}
+        - {x: -61, y: -10}
+        - {x: -59, y: -10}
+        - {x: -56, y: -9}
+        - {x: -51, y: -7}
+        - {x: -52, y: -7}
+        - {x: -55, y: -11}
+        - {x: -64, y: -11}
+        - {x: -64, y: -23}
+        - {x: -63, y: -26}
+        - {x: -58, y: -25}
+        - {x: -55, y: -24}
+        - {x: -37, y: -19}
+        - {x: -30, y: -15}
+        - {x: -20, y: -7}
+        - {x: -16, y: -10}
+        - {x: -16, y: -13}
+        - {x: -16, y: -11}
+        - {x: -20, y: -8}
+        - {x: -22, y: -8}
+        - {x: -29, y: -15}
+        - {x: -36, y: -37}
+        - {x: -35, y: -40}
+        - {x: 55, y: -40}
+        - {x: 64, y: -32}
+        - {x: 64, y: 9}
+      - - {x: -36, y: -19}
+        - {x: -46, y: -36}
+        - {x: -46, y: -39}
+        - {x: -41, y: -39}
+        - {x: -31, y: -30}
+        - {x: -31, y: -19}
+        - {x: -33, y: -18}
+      - - {x: -51, y: -17}
+        - {x: -64, y: -30}
+        - {x: -64, y: -38}
+        - {x: -62, y: -38}
+        - {x: -48, y: -26}
+        - {x: -47, y: -21}
+        - {x: -47, y: -17}
+    - name: Enemy_Boss1_4
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 0
+        width: 128
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 35, y: 27}
+        - {x: 25, y: 40}
+        - {x: -64, y: 40}
+        - {x: -64, y: -34}
+        - {x: -63, y: -40}
+        - {x: 64, y: -40}
+        - {x: 64, y: 5}
+        - {x: 59, y: 5}
+        - {x: 44, y: 6}
+      - - {x: -49, y: -26}
+        - {x: -53, y: -26}
+        - {x: -56, y: -28}
+        - {x: -58, y: -37}
+        - {x: -56, y: -39}
+        - {x: -46, y: -39}
+        - {x: -44, y: -34}
+        - {x: -44, y: -31}
+        - {x: -45, y: -28}
+      - - {x: -14, y: 40}
+        - {x: -16, y: 32}
+        - {x: -14, y: 30}
+        - {x: -4, y: 30}
+        - {x: -2, y: 35}
+        - {x: -2, y: 37}
+        - {x: -4, y: 40}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

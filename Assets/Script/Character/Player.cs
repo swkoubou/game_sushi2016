@@ -85,6 +85,7 @@ public class Player : MonoBehaviour
         {
             Number_Manager.Score /= 2;
             Number_Manager.Lives--;
+            Number_Manager.CamMove_On = true;
             restart();
         }
         /*if (col.tag == "goal")

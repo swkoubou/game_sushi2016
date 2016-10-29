@@ -1,4 +1,6 @@
 SE:魔王魂(http://maoudamashii.jokersounds.com/)
 フォント:ほにゃ。(http://honya.nyanta.jp/)
+ステージ1,2BGM:藍舟(http://dova-s.jp/_contents/author/profile033.html)
+ステージ3BGM:兼田康弘(http://dova-s.jp/_contents/author/profile113.html)
+ステージ4BGM:siroimu(http://dova-s.jp/_contents/author/profile188.html)
 ステージ5BGM:甘茶(http://amachamusic.chagasi.com/)
-ステージ2BGM:藍舟(http://dova-s.jp/_contents/author/profile033.html)

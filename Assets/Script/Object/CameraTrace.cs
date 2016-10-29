@@ -15,7 +15,7 @@ public class CameraTrace : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         Vector3 targetCamPoS = player.transform.position + offset;
-        if (transform.position.x < targetCamPoS.x)
+        if (transform.position.x < targetCamPoS.x&& Number_Manager.CamMove_On == true)
         {
             transform.position = Vector3.Lerp(transform.position,
                 new Vector3(targetCamPoS.x, transform.position.y, transform.position.z),
