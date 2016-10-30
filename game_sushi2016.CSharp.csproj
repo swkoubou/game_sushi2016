@@ -63,8 +63,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Boss\Boss_Script.cs" />
+    <Compile Include="Assets\Boss\Lightning.cs" />
+    <Compile Include="Assets\Boss\Tornado.cs" />
     <Compile Include="Assets\MasterCube\Script\MasterCube.cs" />
-    <Compile Include="Assets\Script\Character\Enemy\Boss_Script.cs" />
     <Compile Include="Assets\Script\Character\Enemy\Enemy_1.cs" />
     <Compile Include="Assets\Script\Character\Enemy\Enemy_2.cs" />
     <Compile Include="Assets\Script\Character\Enemy\Enemy_3.cs" />
